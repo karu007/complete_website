@@ -1,0 +1,7 @@
+aside -/
+autocomplete -/
+autofocus -/
+validation novalidation
+color palletw -/
+upload photo -/
+search -/

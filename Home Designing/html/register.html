@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<title>Register details</title>
+</head>
+
+<body>
+	<header class="heading">
+        <center>
+            <a href="index.html"><img class= "heading_image" width="200" height="150" src="../images/home_look_from_outside.jpg" alt="Home image from outside of house"></a>
+        </center>
+		<h1 class="heading_title" style="text-align: center; margin-top: 0%">Home Designing</h1>
+		<nav style="margin-bottom: 3%">
+			<ul style="list-style-type: none; text-align: center">
+				<li><a class="current_page" href="index.html">Home</a></li>
+				<li><a href="register.html" >Register</a></li>
+				<li><a href="about_us.html" >About us</a></li>
+			</ul>
+		</nav>
+		
+		<div class="search-control" style="text-align: center; margin-bottom: 10px">
+            <input type="search" id="site-search" name="q"
+                   placeholder="Search the site..."
+                   aria-label="Search through site content">
+            <button>Search</button>
+        </div>
+
+	</header>
+	
+	<section>
+		<form action="submit.html">
+			<center>
+			<fieldset style="display: inline-block;">
+				<legend>Personal details</legend>
+                    <div class="labels inputfields">
+
+                        <label style="padding-right: 10px">Name:</label>
+                        <input type="text" name="first_name" placeholder="Enter first name" autocomplete="on" style="margin-right: 10px"  autofocus>
+                        <input type="text" name="middle_name" placeholder="Enter middle name" style="margin-right: 10px">
+                        <input type="text" name="last_name" placeholder="Enter last name" style="margin-right: 10px; margin-bottom: 10px">
+                        
+                        <br>
+                    
+                        <label style="padding-right: 10px;">Gender:</label>
+                        <input type="radio" name="gender" value="male" checked>Male
+                        <input type="radio" name="gender" value="female" style="margin-bottom: 10px" >Female
+
+                        <br>
+
+                        <label>Contact details:</label>
+                        <input type="tel" name="telephone" placeholder="Enter your telephone number" size="25" style="margin-right: 10px">
+                        <input type="tel" name="phone" placeholder="Enter your phone number" size="25" style="margin-bottom: 10px">
+
+                        <br>
+                        <label>Upload your photo:</label>
+                        <input type="file" name="myImage" accept="image/*" size="25" style="margin-bottom: 10px" >
+                        
+                        <br>
+
+                        <label>Select what you prefer:</label>
+                        <select name="personal_liking" style="margin-bottom: 10px"  >
+                            <option value="plc" >Plain light colors</option>
+                            <option value="pdc" >Plain dark colors</option>
+                            <option value="dw" >Designing walls</option>
+                            <option value="all" >Everything</option>
+                        </select>
+
+                        <br>
+                        <label>Select color:</label>
+                        <input type="color" id="head" name="color" value="#e66465" style="margin-bottom: 10px" />
+                        <br>
+
+                    </div>
+			    </fieldset>
+			<br>
+			<fieldset style="display: inline-block; width: 618px">
+				<legend>Details for getting updates from us</legend>
+				<label>Enter your email:</label>
+				<input type="email" name="email" placeholder="Enter your email">
+			</fieldset>
+           <br>
+            
+			
+			<fieldset style="display: inline-block; width: 618px">
+				<legend>Professional details</legend>
+				<label>Enter your profession:</label>
+				<input type="text" name="profession" placeholder="Enter your professison"> 
+			</fieldset>
+			<br>
+			
+			
+			<fieldset style="display: inline-block; width: 618px">
+				<legend>Feedback to us</legend>
+				<div style="margin-left:50px">
+					<label style="margin-left:16px">1</label>
+					<label style="margin-left:17px">2</label>
+					<label style="margin-left:16px">3</label>
+					<label style="margin-left:17px">4</label>
+					<label style="margin-left:16px">5</label>
+				</div>
+				<br>
+				
+				<label>Rate Us:</label>
+				<input type="range" name="rating" min="1" max="5">
+				<br>
+				<textarea name="message" rows="10" cols="40" placeholder="Please, have a comment about us." novalidate></textarea>
+			</fieldset>
+			
+			<br>
+			<br>
+			
+                <a href="index.html"><input onclick="index.html;" type="submit" value="submit" style="width: 10%"></a>
+			</center>
+			<br>
+			
+
+		</form>
+	</section>
+	
+<!--
+	<section>
+		<aside>
+		</aside>
+	</section>
+-->
+	
+	<center>
+	    <footer style="margin-top: 3%">
+            <a href="index.html"><img src="../images/logo.png" alt="logo" width="100" height="75"></a>
+            <nav>
+                <ul style="list-style-type: none">
+                    <li><a href="register.html">Sign up for free</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="terms_and_conditions.html">Terms & Coditions</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                </ul>
+            </nav>
+            <br>
+            <label><b> HOME DESIGNING INTERNATIONAL<b></label>
+            <br>
+            <select name="countries">
+                <option value="Honduras">Honduras</option> 
+                <option value="Hong Kong">Hong Kong</option> 
+                <option value="Hungary">Hungary</option> 
+                <option value="Iceland">Iceland</option> 
+                <option value="India" selected>India</option> 
+                <option value="Zambia">Zambia</option> 
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+	    </footer>
+	</center>
+</body>
+
+</html>
